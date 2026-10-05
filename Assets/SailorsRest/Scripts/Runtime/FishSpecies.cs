@@ -3,6 +3,29 @@ using UnityEngine;
 
 namespace SailorsRest
 {
+    /// <summary>
+    /// How a hooked fish fights: it alternates runs (swims away, pulls the line tight) with rests (tired, can be
+    /// reeled in). Per-tier arrays: index 0 = T1.
+    /// </summary>
+    [System.Serializable]
+    public class FightStyle
+    {
+        [Tooltip("Seconds each run lasts, picked at random in this range. A fresh bite starts with a run.")]
+        public Vector2 runSeconds = new Vector2(1.2f, 2.2f);
+        [Tooltip("Seconds it rests between runs. Only a resting fish comes in when you reel on green.")]
+        public Vector2 restSeconds = new Vector2(1.5f, 3f);
+        [Tooltip("Metres per second it swims away from the dock during a run, per tier.")]
+        public float[] runSpeed = { 0.9f, 1.2f, 1.5f };
+        [Tooltip("Line tension per second it adds during a run, per tier. Keep it below the tension fall rate so easing off still helps.")]
+        public float[] runTension = { 0.3f, 0.35f, 0.4f };
+        [Tooltip("Metres per second it pulls down during a run; negative pulls toward the surface.")]
+        public float dive;
+        [Tooltip("Peak up-and-down speed of its zigzag during a run, metres per second. 0 = swims straight.")]
+        public float weave;
+        [Tooltip("Radians per second of the zigzag: low = slow rolls, high = head shakes.")]
+        public float weaveFrequency = 6f;
+    }
+
     /// <summary>One kind of fish. Per-tier arrays are indexed from T1.</summary>
     [CreateAssetMenu(menuName = "Sailor's Rest/Fish Species", fileName = "Species")]
     public class FishSpecies : ScriptableObject
@@ -31,8 +54,11 @@ namespace SailorsRest
         public int[] qteArcCount = { 2, 1, 1 };
         [Tooltip("Ring needle speed, in degrees per second.")]
         public float[] qteSpeed = { 200f, 260f, 320f };
-        [Tooltip("Tension added by each surge during the reel-in.")]
+        [Tooltip("Tension jolt when the fish starts a run during the reel-in.")]
         public float[] surgeStrength = { 0.12f, 0.2f, 0.28f };
+
+        [Header("Fight while reeling")]
+        public FightStyle fight = new FightStyle();
 
         [Header("Economy")]
         public float pricePerKg = 30f;
@@ -50,6 +76,8 @@ namespace SailorsRest
         public int ArcsFor(int tier) => At(qteArcCount, tier);
         public float SpeedFor(int tier) => At(qteSpeed, tier);
         public float SurgeFor(int tier) => At(surgeStrength, tier);
+        public float RunSpeedFor(int tier) => At(fight.runSpeed, tier);
+        public float RunTensionFor(int tier) => At(fight.runTension, tier);
 
         public float RandomWeight(int tier)
         {

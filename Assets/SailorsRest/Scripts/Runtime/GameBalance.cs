@@ -69,21 +69,37 @@ namespace SailorsRest
         public float escapedIgnoreSeconds = 3f;
 
         [Header("Reeling")]
-        [Tooltip("How fast a hooked fish pulls away per tier while you are not reeling.")]
+        [Tooltip("How fast a resting hooked fish drifts away per tier while you are not reeling.")]
         public float fishDriftPerTier = 0.3f;
         [Tooltip("Metres per second the hooked fish can be steered up or down.")]
         public float fishVerticalSpeed = 2.5f;
         public float tensionRiseRate = TensionModel.DefaultRiseRate;
         public float tensionFallRate = TensionModel.DefaultFallRate;
         public float tensionGrace = TensionModel.DefaultGrace;
-        [Tooltip("Seconds between fish surges, picked at random in this range.")]
-        public Vector2 surgeInterval = new Vector2(1.6f, 3.4f);
         public float mergeRadius = 0.75f;
         public float mergeWeightBonus = 0.1f;
         [Tooltip("The fish is landed once it is this close to the dock edge.")]
         public float landingDistance = 0.2f;
         [Tooltip("While reeling, the hook may come this far back under the dock.")]
         public float underDockReach = 1f;
+
+        [Header("Fishing line (rope physics)")]
+        [Tooltip("Rope points between the rod tip and the hook. More = smoother curve.")]
+        public int lineSegments = 24;
+        [Tooltip("Extra line on top of the straight distance when it is fully slack, as a fraction: 0.25 = 25% longer.")]
+        public float lineSlack = 0.25f;
+        [Tooltip("How taut the line is while it is not being reeled (0 = all slack, 1 = straight).")]
+        [Range(0f, 1f)] public float lineRestTautness = 0.3f;
+        [Tooltip("Metres per second squared pulling the line down in the air.")]
+        public float lineAirGravity = 9.8f;
+        [Tooltip("Metres per second squared pulling the line down under water: it sinks slowly.")]
+        public float lineWaterGravity = 1.2f;
+        [Tooltip("Share of its speed a line point keeps each frame in the air.")]
+        [Range(0f, 1f)] public float lineAirDamping = 0.98f;
+        [Tooltip("Share of its speed a line point keeps each frame under water: water drag.")]
+        [Range(0f, 1f)] public float lineWaterDamping = 0.85f;
+        [Tooltip("Longest physics step, in seconds, so a frame hitch doesn't fling the line.")]
+        public float lineMaxStep = 1f / 30f;
 
         [Header("End of a cast")]
         [Tooltip("Metres per second the empty line comes back after a cast.")]

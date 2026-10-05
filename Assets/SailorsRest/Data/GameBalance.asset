@@ -47,7 +47,6 @@ MonoBehaviour:
   tensionRiseRate: 0.55
   tensionFallRate: 0.7
   tensionGrace: 0.9
-  surgeInterval: {x: 1.6, y: 3.4}
   mergeRadius: 0.75
   mergeWeightBonus: 0.1
   landingDistance: 0.2

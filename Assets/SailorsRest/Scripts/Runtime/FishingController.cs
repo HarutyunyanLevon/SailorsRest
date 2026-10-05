@@ -13,8 +13,6 @@ namespace SailorsRest
     {
         public enum Phase { Aiming, Casting, Searching, Hooking, Reeling, CastOver, Sunset }
 
-        const int LinePoints = 3;   // rod tip, where the line meets the water, hook
-
         [Header("Setup")]
         public GameBalance balance;
         public FishSpawner spawner;
@@ -29,6 +27,8 @@ namespace SailorsRest
         public DaySession Day { get; private set; }
         public PowerBarModel Power { get; private set; }
         public TensionModel Tension { get; private set; }
+        /// <summary>The hooked fish's run / rest cycle. Set while reeling.</summary>
+        public FishFight Fight { get; private set; }
         public FishAgent Hooked { get; private set; }
         public float HookDepth => Mathf.Max(0f, GameBalance.WaterlineY - hook.position.y);
 
@@ -39,7 +39,8 @@ namespace SailorsRest
 
         QteModel qte;
         FishAgent biting;
-        float stateTimer, castX, surgeTimer;
+        FishingLineRope rope;
+        float stateTimer, castX;
         Vector3 castStart;
         bool charging;
         readonly System.Random rng = new System.Random();
@@ -48,6 +49,7 @@ namespace SailorsRest
         {
             balance = balance.WithGear(Progress);
             Power = new PowerBarModel(balance.powerCyclesPerSecond);
+            rope = new FishingLineRope(line, balance);
         }
 
         void Start()
@@ -175,30 +177,28 @@ namespace SailorsRest
 
         void HideRing() => qteView.Hide();
 
-        // ----- Reeling: hold to pull (raising tension), steer depth, sweep into matching fish -----
+        // ----- Reeling: the fish runs (swims away, pulls the line tight) and rests (comes in while you reel on green) -----
         void BeginReel(FishAgent fish)
         {
             Hooked = fish;
             biting = null;
-            Hooked.Face(FishAgent.Left);
             Tension.SetZone(balance.ZoneMin, balance.ZoneMax);
             Tension.Reset();
-            surgeTimer = NextSurgeDelay();
+            var style = fish.Species.fight;
+            Fight = new FishFight(rng, style.runSeconds.x, style.runSeconds.y, style.restSeconds.x, style.restSeconds.y);
+            OnFightPhaseChanged();
             Enter(Phase.Reeling);
         }
 
         void UpdateReeling(float dt)
         {
             bool reeling = input.PrimaryHeld;
+            var species = Hooked.Species;
+            int tier = Hooked.Data.Tier;
 
-            surgeTimer -= dt;
-            if (surgeTimer <= 0f)
-            {
-                Tension.AddSurge(Hooked.Species.SurgeFor(Hooked.Data.Tier));
-                surgeTimer = NextSurgeDelay();
-            }
-
-            if (Tension.Tick(dt, reeling))
+            if (Fight.Tick(dt)) OnFightPhaseChanged();
+            float fishPull = Fight.IsRunning ? species.RunTensionFor(tier) : 0f;
+            if (Tension.Tick(dt, reeling, fishPull))
             {
                 OnLineFailed();
                 if (Hooked == null) return;
@@ -206,9 +206,9 @@ namespace SailorsRest
 
             float minX = balance.dockEdgeX - balance.underDockReach;
             MoveHook(dt, balance.fishVerticalSpeed, 0f, minX, balance.FarthestX);
-            float pull = reeling ? -balance.ReelSpeed : balance.fishDriftPerTier * Hooked.Data.Tier;
             var p = hook.position;
-            p.x = Mathf.Clamp(p.x + pull * dt, minX, balance.FarthestX);
+            p.x = Mathf.Clamp(p.x + FishSpeedX(reeling, species, tier) * dt, minX, balance.FarthestX);
+            if (Fight.IsRunning) p.y = Mathf.Clamp(p.y + RunSpeedY(species.fight) * dt, MinHookY, MaxHookY);
             hook.position = p;
             Hooked.transform.position = p;
 
@@ -216,7 +216,26 @@ namespace SailorsRest
             if (p.x <= balance.dockEdgeX + balance.landingDistance) Land();
         }
 
-        float NextSurgeDelay() => UnityEngine.Random.Range(balance.surgeInterval.x, balance.surgeInterval.y);
+        /// <summary>A run starts with a jolt on the line and the fish turning away; a rest turns it back toward the dock.</summary>
+        void OnFightPhaseChanged()
+        {
+            if (Fight.IsRunning) Tension.AddSurge(Hooked.Species.SurgeFor(Hooked.Data.Tier));
+            Hooked.Face(Fight.IsRunning ? FishAgent.Right : FishAgent.Left);
+        }
+
+        /// <summary>
+        /// Metres per second along the lake (+ = away from the dock). A running fish always gains distance; a resting
+        /// one comes in only while you reel with the tension on green, and drifts off when you let go.
+        /// </summary>
+        float FishSpeedX(bool reeling, FishSpecies species, int tier)
+        {
+            if (Fight.IsRunning) return species.RunSpeedFor(tier);
+            if (!reeling) return balance.fishDriftPerTier * tier;
+            return Tension.State == TensionState.Steady ? -balance.ReelSpeed : 0f;
+        }
+
+        /// <summary>Metres per second up or down during a run (+ = toward the surface): the species' dive plus its zigzag.</summary>
+        float RunSpeedY(FightStyle style) => -style.dive + style.weave * Mathf.Sin(stateTimer * style.weaveFrequency);
 
         /// <summary>O(N) per frame while reeling, N = balance.fishCount.</summary>
         void TryMerge()
@@ -306,11 +325,14 @@ namespace SailorsRest
         }
 
         // ----- Helpers -----
+        float MinHookY => GameBalance.WaterlineY - balance.MaxHookDepth;
+        float MaxHookY => GameBalance.WaterlineY - balance.hookMinDepth;
+
         void MoveHook(float dt, float vSpeed, float hSpeed, float minX, float maxX)
         {
             Vector2 p = hook.position;
-            float minY = GameBalance.WaterlineY - balance.MaxHookDepth;
-            float maxY = GameBalance.WaterlineY - balance.hookMinDepth;
+            float minY = MinHookY;
+            float maxY = MaxHookY;
             if (input.TryGetPointerWorld(Camera.main, out var pointer))
             {
                 p.y = Mathf.MoveTowards(p.y, Mathf.Clamp(pointer.y, minY, maxY), vSpeed * dt);
@@ -333,16 +355,19 @@ namespace SailorsRest
 
         void DrawLine()
         {
-            bool visible = State != Phase.Aiming && State != Phase.Sunset;
-            line.enabled = visible;
-            if (!visible) return;
-            Vector3 tip = rodTip.position;
-            Vector3 h = hook.position;
-            bool underwater = h.y < GameBalance.WaterlineY;
-            line.positionCount = LinePoints;
-            line.SetPosition(0, tip);
-            line.SetPosition(1, underwater ? new Vector3(h.x, GameBalance.WaterlineY, 0f) : h);
-            line.SetPosition(2, h);
+            if (State == Phase.Aiming || State == Phase.Sunset) { rope.Hide(); return; }
+            rope.Simulate(rodTip.position, hook.position, LineTautness(), Time.deltaTime);
+        }
+
+        /// <summary>While reeling the line is as taut as the tension; reeling back empty pulls it straight.</summary>
+        float LineTautness()
+        {
+            switch (State)
+            {
+                case Phase.Reeling: return Tension.Value;
+                case Phase.CastOver: return 1f;
+                default: return balance.lineRestTautness;
+            }
         }
     }
 }

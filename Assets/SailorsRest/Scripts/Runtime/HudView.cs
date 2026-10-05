@@ -352,7 +352,9 @@ namespace SailorsRest
             tensionZone.anchoredPosition = Vector2.right * (Layout.TrackWidth * t.ZoneMin);
             tensionZone.sizeDelta = new Vector2(Layout.TrackWidth * (t.ZoneMax - t.ZoneMin), Layout.TensionBedHeight);
             tensionMarker.anchoredPosition = Vector2.right * (Layout.TrackWidth * t.Value);
-            tensionState.text = t.State == TensionState.Slack ? "Slack — reel in" : t.State == TensionState.Danger ? "Snap risk!" : "Steady";
+            tensionState.text = t.State == TensionState.Slack ? "Slack — reel in"
+                : t.State == TensionState.Danger ? "Snap risk!"
+                : game.Fight.IsRunning ? "It's running — ease off" : "Steady — reel in";
             tensionState.color = t.State == TensionState.Steady ? Palette.Success : t.State == TensionState.Danger ? Palette.Danger : Palette.Ink;
 
             // The card only changes when a new fish is hooked or the hooked one merges or slips a tier.

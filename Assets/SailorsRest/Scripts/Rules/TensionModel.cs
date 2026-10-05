@@ -3,7 +3,8 @@ namespace SailorsRest.Rules
     public enum TensionState { Slack, Steady, Danger }
 
     /// <summary>
-    /// Line tension during the reel-in, 0..1. Holding raises it, releasing lowers it, fish surges spike it.
+    /// Line tension during the reel-in, 0..1. Holding raises it, releasing lowers it, a running fish pulls it up
+    /// and the start of each run spikes it.
     /// Staying outside the safe zone longer than the grace time is a failure.
     /// </summary>
     public class TensionModel
@@ -38,10 +39,11 @@ namespace SailorsRest.Rules
 
         public void AddSurge(float amount) => Value = Clamp01(Value + amount);
 
-        /// <summary>Advances the model. Returns true when the line fails this tick.</summary>
-        public bool Tick(float dt, bool reeling)
+        /// <summary>Advances the model. <paramref name="fishPull"/> is tension per second the fish adds.
+        /// Returns true when the line fails this tick.</summary>
+        public bool Tick(float dt, bool reeling, float fishPull = 0f)
         {
-            Value = Clamp01(Value + (reeling ? RiseRate : -FallRate) * dt);
+            Value = Clamp01(Value + ((reeling ? RiseRate : -FallRate) + fishPull) * dt);
             if (State == TensionState.Steady)
             {
                 OutsideTime = 0f;

@@ -71,6 +71,38 @@ namespace SailorsRest.Tests
             t.AddSurge(0.3f);
             Assert.AreEqual(TensionState.Danger, t.State);
         }
+
+        [Test]
+        public void FishPull_RaisesTension_EvenWhenEasingOff()
+        {
+            var t = new TensionModel(0.3f, 0.7f, 0.5f) { FallRate = 0.5f };
+            t.Tick(0.1f, false, 1f);
+            Assert.Greater(t.Value, 0.5f);
+        }
+    }
+
+    public class FishFightTests
+    {
+        [Test]
+        public void FreshBite_StartsWithARun()
+        {
+            var fight = new FishFight(new System.Random(1), 1f, 2f, 3f, 4f);
+            Assert.IsTrue(fight.IsRunning);
+            Assert.That(fight.TimeLeft, Is.InRange(1f, 2f));
+        }
+
+        [Test]
+        public void RunsAndRests_Alternate()
+        {
+            var fight = new FishFight(new System.Random(1), 1f, 1f, 2f, 2f);
+            Assert.IsFalse(fight.Tick(0.5f));
+            Assert.IsTrue(fight.IsRunning);
+            Assert.IsTrue(fight.Tick(0.5f));
+            Assert.AreEqual(FightPhase.Resting, fight.Phase);
+            Assert.AreEqual(2f, fight.TimeLeft, 1e-4f);
+            Assert.IsTrue(fight.Tick(2f));
+            Assert.IsTrue(fight.IsRunning);
+        }
     }
 
     public class QteModelTests

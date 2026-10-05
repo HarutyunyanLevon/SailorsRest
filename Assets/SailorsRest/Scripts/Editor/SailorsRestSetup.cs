@@ -44,22 +44,48 @@ namespace SailorsRest.EditorTools
         /// </summary>
         static readonly SpeciesSpec[] Species =
         {
-            new SpeciesSpec("Perch", "perch", "fish_perch", 0.8f, 4.5f, 1.2f, 34f, new Vector2(0.15f, 0.4f), new Vector2(0.5f, 0.9f), new Vector2(1.2f, 2f)),
-            new SpeciesSpec("Carp", "carp", "fish_carp", 2.5f, 8f, 1f, 28f, new Vector2(0.4f, 0.9f), new Vector2(1.1f, 2f), new Vector2(2.6f, 4.4f)),
-            new SpeciesSpec("Catfish", "catfish", "fish_catfish", 5.5f, 12f, 0.7f, 26f, new Vector2(0.8f, 1.6f), new Vector2(2f, 3.4f), new Vector2(4.6f, 7.5f)),
+            new SpeciesSpec("Perch", "perch", "fish_perch", 0.8f, 4.5f, 1.2f, 34f, PerchFight, new Vector2(0.15f, 0.4f), new Vector2(0.5f, 0.9f), new Vector2(1.2f, 2f)),
+            new SpeciesSpec("Carp", "carp", "fish_carp", 2.5f, 8f, 1f, 28f, CarpFight, new Vector2(0.4f, 0.9f), new Vector2(1.1f, 2f), new Vector2(2.6f, 4.4f)),
+            new SpeciesSpec("Catfish", "catfish", "fish_catfish", 5.5f, 12f, 0.7f, 26f, CatfishFight, new Vector2(0.8f, 1.6f), new Vector2(2f, 3.4f), new Vector2(4.6f, 7.5f)),
+        };
+
+        // Perch: short, frequent darting runs toward the surface with a fast zigzag.
+        static FightStyle PerchFight => new FightStyle
+        {
+            runSeconds = new Vector2(0.6f, 1.2f), restSeconds = new Vector2(0.8f, 1.6f),
+            runSpeed = new[] { 0.9f, 1.1f, 1.3f }, runTension = new[] { 0.25f, 0.3f, 0.35f },
+            dive = -0.3f, weave = 2.2f, weaveFrequency = 9f,
+        };
+
+        // Carp: long, steady, strong runs that stay level, then long rests.
+        static FightStyle CarpFight => new FightStyle
+        {
+            runSeconds = new Vector2(1.8f, 3f), restSeconds = new Vector2(2f, 3.5f),
+            runSpeed = new[] { 1.1f, 1.4f, 1.7f }, runTension = new[] { 0.3f, 0.36f, 0.42f },
+            dive = 0.2f, weave = 0.3f, weaveFrequency = 2f,
+        };
+
+        // Catfish: slow and heavy, dives for the bottom shaking its head.
+        static FightStyle CatfishFight => new FightStyle
+        {
+            runSeconds = new Vector2(2.5f, 4f), restSeconds = new Vector2(2.5f, 4.5f),
+            runSpeed = new[] { 0.7f, 0.95f, 1.2f }, runTension = new[] { 0.35f, 0.42f, 0.48f },
+            dive = 1.4f, weave = 0.8f, weaveFrequency = 14f,
         };
 
         sealed class SpeciesSpec
         {
             public readonly string Name, Id, Sprite;
             public readonly float MinDepth, MaxDepth, SpawnWeight, PricePerKg;
+            public readonly FightStyle Fight;
             public readonly Vector2[] WeightRangeKg;
 
             public SpeciesSpec(string name, string id, string sprite, float minDepth, float maxDepth, float spawnWeight, float pricePerKg,
-                params Vector2[] weightRangeKg)
+                FightStyle fight, params Vector2[] weightRangeKg)
             {
                 Name = name; Id = id; Sprite = sprite;
                 MinDepth = minDepth; MaxDepth = maxDepth; SpawnWeight = spawnWeight; PricePerKg = pricePerKg;
+                Fight = fight;
                 WeightRangeKg = weightRangeKg;
             }
         }
@@ -169,6 +195,7 @@ namespace SailorsRest.EditorTools
             s.spawnWeight = spec.SpawnWeight;
             s.weightRangeKg = spec.WeightRangeKg;
             s.pricePerKg = spec.PricePerKg;
+            s.fight = spec.Fight;
             return s;
         }
 

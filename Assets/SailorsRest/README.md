@@ -14,14 +14,14 @@ Loop: **Map → Shore Pond** (fish until sunset; catches go into your creel) **�
 
 Where the numbers live:
 
-- **`GameBalance`** — every gameplay number: lake size, casting and power-bar speed, hook movement, hooking ring, reeling and tension, wild-fish movement, gear effects, the golden-fish price bonus.
-- **`Species_*`** — per-species depth, spawn weight, price per kg, and per-tier ring arcs, needle speed, surges and weights.
+- **`GameBalance`** — every gameplay number: lake size, casting and power-bar speed, hook movement, hooking ring, reeling and tension, the fishing-line rope physics, wild-fish movement, gear effects, the golden-fish price bonus.
+- **`Species_*`** — per-species depth, spawn weight, price per kg, per-tier ring arcs, needle speed, run jolts and weights, and the **fight style**: run/rest durations, run speed and tension per tier, dive and zigzag.
 - **`GearCatalog`** (code, Rules) — gear names, effects and upgrade prices, as one table.
 - **`WorldArt`** — Shore Pond scenery placement (backdrops, waterline, weeds, dock, fisherman, rod).
 - **`UiSkin`** — the UI-kit sprites. Fields carry `[SpriteFile]`, so **Refresh Sprites From SpriteCook** re-links them by file name.
 - **`UiStyle`** (code) — shared UI metrics: margins, font sizes, chip sizes, border thinning. Each screen keeps its own layout in a nested `Layout` class.
 
-Controls: hold left mouse / A / Space to charge, release to cast; move the hook with the mouse, WASD or the left stick; click / A on green to hook; hold to reel and steer into same-species, same-tier fish to merge; right mouse / B / R reels back. Esc / M / Start goes back to the map while aiming (Esc is swallowed by the editor; use M there). At sunset: click / A for the market, right mouse / B for the map. In the market, Esc / B goes back to the map. The map has no Esc shortcut; use its Quit button to leave the game.
+Controls: hold left mouse / A / Space to charge, release to cast; move the hook with the mouse, WASD or the left stick; click / A on green to hook; hold to reel and steer into same-species, same-tier fish to merge (a hooked fish alternates runs, when it swims away and you ease off to keep the tension on green, with rests, when holding on green pulls it in); right mouse / B / R reels back. Esc / M / Start goes back to the map while aiming (Esc is swallowed by the editor; use M there). At sunset: click / A for the market, right mouse / B for the map. In the market, Esc / B goes back to the map. The map has no Esc shortcut; use its Quit button to leave the game.
 
 ## Idle animations — everything moves
 
