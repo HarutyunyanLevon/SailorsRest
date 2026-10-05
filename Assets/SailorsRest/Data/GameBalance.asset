@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 228a14780dc361d44bf7f4d7fa6e59f2, type: 3}
+  m_Name: GameBalance
+  m_EditorClassIdentifier: Assembly-CSharp::SailorsRest.GameBalance
+  castsPerDay: 8
+  dockEdgeX: 4
+  lakeEndX: 60
+  lakeBottomY: -20
+  lakeEndMargin: 1
+  castDistanceBase: 14
+  castDistancePerRod: 6
+  hookDepthBase: 6
+  hookDepthPerLevel: 3
+  tensionZoneMin: 0.3
+  tensionZoneMax: 0.72
+  tensionZonePerLine: 0.04
+  tensionZoneLimits: {x: 0.05, y: 0.95}
+  reelSpeedBase: 2.2
+  reelSpeedPerLevel: 0.35
+  powerCyclesPerSecond: 0.8
+  castMinDistance: 2
+  castFlightSeconds: 0.8
+  castArcHeight: 4
+  hookVerticalSpeed: 3.5
+  hookHorizontalSpeed: 0.7
+  hookHorizontalRange: 4
+  hookMinDepth: 0.4
+  biteRadius: 0.7
+  qteSpeedScale: 1
+  rareZoneScale: 0.8
+  rareSpeedScale: 1.15
+  ringHeightAboveFish: 1.6
+  ringResultSeconds: 0.35
+  escapedIgnoreSeconds: 3
+  fishDriftPerTier: 0.3
+  fishVerticalSpeed: 2.5
+  tensionRiseRate: 0.55
+  tensionFallRate: 0.7
+  tensionGrace: 0.9
+  surgeInterval: {x: 1.6, y: 3.4}
+  mergeRadius: 0.75
+  mergeWeightBonus: 0.1
+  landingDistance: 0.2
+  underDockReach: 1
+  reelBackSpeed: 25
+  castOverSeconds: 0.5
+  sunsetInputDelay: 0.6
+  fishCount: 22
+  maxTier: 3
+  tierScale:
+  - 1
+  - 1.5
+  - 2.1
+  swimSpeed: {x: 0.4, y: 0.9}
+  bobAmplitude: 0.25
+  bobFrequency: 0.8
+  spawnGapFromDock: 3
+  patrolGapFromDock: 2
+  patrolHalfWidth: {x: 3, y: 7}
+  goldenPriceMultiplier: 3
+  species:
+  - {fileID: 11400000, guid: 7b05ad81231d10c4ca9bd5ab94fe732c, type: 2}
+  - {fileID: 11400000, guid: 937a337994db9b94590cc026d78c0f98, type: 2}
+  - {fileID: 11400000, guid: 95e0f229e58f6834582e0913d2b603d0, type: 2}

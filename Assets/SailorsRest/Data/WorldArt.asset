@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625d6bdf8b899aa42aa1b5c590306550, type: 3}
+  m_Name: WorldArt
+  m_EditorClassIdentifier: Assembly-CSharp::SailorsRest.WorldArt
+  sky: {fileID: 21300000, guid: 2f1e29ff05c17734db6d9d8cffaaa6bf, type: 3}
+  underwater: {fileID: 21300000, guid: 589911e2ab7b24144af86f94bf7621e5, type: 3}
+  dock: {fileID: 21300000, guid: 9a2e6c7417f0106498b670ba6dbf286a, type: 3}
+  fisherman: {fileID: 21300000, guid: 85c5dea30415d374ba7d8a2dcfe7d3ae, type: 3}
+  bobber: {fileID: 21300000, guid: 9b90c8d1ccdaaa441aff8867a9a0ed89, type: 3}
+  weeds: {fileID: 21300000, guid: b4652e2b2e1912c4a85a80a4e8452286, type: 3}
+  skyParallax: 0.9
+  underwaterParallax: 0.8
+  skyBottomY: -4.1
+  underwaterTopY: -0.35
+  surfaceBandHeight: 0.44
+  surfaceBandAlpha: 0.85
+  surfaceBandOverhang: 16
+  dockOffset: {x: -0.4, y: 0}
+  fishermanOffset: {x: -1.4, y: -0.05}
+  handsOffset: {x: -0.6, y: 1.4}
+  rodTipOffset: {x: 0.3, y: 3.2}
+  rodThickness: 0.12
+  weedClumps: 9
+  firstWeedGap: 3
+  weedSpacing: 6.4
+  weedJitter: 1
+  weedSink: 0.4
+  marketBackdrop: {fileID: 21300000, guid: 6cde30f5c4cc5fd4491e481b6408abe8, type: 3}
+  fishmonger: {fileID: 21300000, guid: 8f04e63d2a720ff41a0a46b735833e94, type: 3}
+  mapBackdrop: {fileID: 21300000, guid: ba67c18890a467048b86ca699b8f5ae8, type: 3}
+  mapPond: {fileID: 21300000, guid: 4014737b7f693ca4d8b810c356fd7535, type: 3}
+  mapMarket: {fileID: 21300000, guid: a9c7ef95dc6abee4ba9fe7e80a4582e8, type: 3}
+  fishermanIdle:
+  - {fileID: -639206233361020968, guid: 2350bc1c595e0204fbf434d9d91236b1, type: 3}
+  - {fileID: -4738010327731160187, guid: 2350bc1c595e0204fbf434d9d91236b1, type: 3}
+  - {fileID: 3553727917093880757, guid: 2350bc1c595e0204fbf434d9d91236b1, type: 3}
+  - {fileID: 8639809559977710523, guid: 2350bc1c595e0204fbf434d9d91236b1, type: 3}
+  - {fileID: 7795245143116387625, guid: 2350bc1c595e0204fbf434d9d91236b1, type: 3}
+  - {fileID: 2551703591345245425, guid: 2350bc1c595e0204fbf434d9d91236b1, type: 3}
+  - {fileID: -7911584414123240462, guid: 2350bc1c595e0204fbf434d9d91236b1, type: 3}
+  - {fileID: 5750099324212414592, guid: 2350bc1c595e0204fbf434d9d91236b1, type: 3}
+  dockIdle:
+  - {fileID: -4582587378846965498, guid: b2b96988bd507f14abb7f3ffb67a37ab, type: 3}
+  - {fileID: 6141460089660284699, guid: b2b96988bd507f14abb7f3ffb67a37ab, type: 3}
+  - {fileID: -5236967453141793539, guid: b2b96988bd507f14abb7f3ffb67a37ab, type: 3}
+  - {fileID: -1326188482475208925, guid: b2b96988bd507f14abb7f3ffb67a37ab, type: 3}
+  - {fileID: 5142804965005932579, guid: b2b96988bd507f14abb7f3ffb67a37ab, type: 3}
+  - {fileID: 944090683029393527, guid: b2b96988bd507f14abb7f3ffb67a37ab, type: 3}
+  - {fileID: -2036788639235342445, guid: b2b96988bd507f14abb7f3ffb67a37ab, type: 3}
+  - {fileID: 5263954238709994742, guid: b2b96988bd507f14abb7f3ffb67a37ab, type: 3}
+  weedsIdle:
+  - {fileID: -4993539288555654851, guid: 00353f61811642c418feb5741153c8d3, type: 3}
+  - {fileID: 6231573788740207527, guid: 00353f61811642c418feb5741153c8d3, type: 3}
+  - {fileID: 1278598187339661519, guid: 00353f61811642c418feb5741153c8d3, type: 3}
+  - {fileID: 3210391766434549144, guid: 00353f61811642c418feb5741153c8d3, type: 3}
+  - {fileID: -8251862000412303830, guid: 00353f61811642c418feb5741153c8d3, type: 3}
+  - {fileID: -1340961464397538177, guid: 00353f61811642c418feb5741153c8d3, type: 3}
+  - {fileID: 2267609072976134639, guid: 00353f61811642c418feb5741153c8d3, type: 3}
+  - {fileID: 6223922635186364070, guid: 00353f61811642c418feb5741153c8d3, type: 3}
+  fishmongerIdle:
+  - {fileID: 4373614991671530429, guid: 43ec577b2231e624690e39947a202d97, type: 3}
+  - {fileID: 731514432014967851, guid: 43ec577b2231e624690e39947a202d97, type: 3}
+  - {fileID: 2909026641246783370, guid: 43ec577b2231e624690e39947a202d97, type: 3}
+  - {fileID: 4117788862551550274, guid: 43ec577b2231e624690e39947a202d97, type: 3}
+  - {fileID: 1663295083188679396, guid: 43ec577b2231e624690e39947a202d97, type: 3}
+  - {fileID: -5339987392716170287, guid: 43ec577b2231e624690e39947a202d97, type: 3}
+  - {fileID: -407259105662814531, guid: 43ec577b2231e624690e39947a202d97, type: 3}
+  - {fileID: -7548289369017369149, guid: 43ec577b2231e624690e39947a202d97, type: 3}
+  mapPondIdle:
+  - {fileID: -8721180074326935029, guid: 173f41ec4866553419ddbcc7533106a6, type: 3}
+  - {fileID: -7960855230944964933, guid: 173f41ec4866553419ddbcc7533106a6, type: 3}
+  - {fileID: 1616463435691706065, guid: 173f41ec4866553419ddbcc7533106a6, type: 3}
+  - {fileID: 2897135301207739196, guid: 173f41ec4866553419ddbcc7533106a6, type: 3}
+  - {fileID: -726549303406930132, guid: 173f41ec4866553419ddbcc7533106a6, type: 3}
+  - {fileID: -1435845038893451891, guid: 173f41ec4866553419ddbcc7533106a6, type: 3}
+  - {fileID: 818116103005294012, guid: 173f41ec4866553419ddbcc7533106a6, type: 3}
+  - {fileID: 7334758590044413663, guid: 173f41ec4866553419ddbcc7533106a6, type: 3}
+  mapMarketIdle:
+  - {fileID: -3321418612608474262, guid: 64f41451820fedc4e84723297afa6fb0, type: 3}
+  - {fileID: 7151143027718580030, guid: 64f41451820fedc4e84723297afa6fb0, type: 3}
+  - {fileID: -4208791856338370512, guid: 64f41451820fedc4e84723297afa6fb0, type: 3}
+  - {fileID: 3020955110638022962, guid: 64f41451820fedc4e84723297afa6fb0, type: 3}
+  - {fileID: 2108417268153351221, guid: 64f41451820fedc4e84723297afa6fb0, type: 3}
+  - {fileID: -5454605586053605079, guid: 64f41451820fedc4e84723297afa6fb0, type: 3}
+  - {fileID: -5835462145554309541, guid: 64f41451820fedc4e84723297afa6fb0, type: 3}
+  - {fileID: -4509031591231424578, guid: 64f41451820fedc4e84723297afa6fb0, type: 3}
+  idleFps: 8
+  bobberSwayDegrees: 7
+  skyMotes: 18
+  bubbles: 14
+  surfaceSparkles: 16
+  lightRays: 7
+  surfaceShimmer: 0.12
+  marketMotes: 22
+  mapSparkles: 10
+  gearIconTwinkles: 2
+  iconRod: {fileID: 21300000, guid: cb2a001053f04f64ababe25e8ca44489, type: 3}
+  iconHook: {fileID: 21300000, guid: cd435117e4f29a049a0c588724a70082, type: 3}
+  iconLine: {fileID: 21300000, guid: ef567fb0d7eaed147bf4e056a121e86d, type: 3}
+  iconReel: {fileID: 21300000, guid: a4fa39bed0ecb2240b8c9ea9d574ae39, type: 3}

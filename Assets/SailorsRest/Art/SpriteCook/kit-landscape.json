@@ -1,0 +1,890 @@
+{
+  "source": "SpriteCook UI kit (landscape, Steam)",
+  "ui_kit_id": "68cbfd8f-14a2-45b5-98a2-46465e1b10d6",
+  "project_id": "94971719-0975-4800-be0e-0286a0f41c24",
+  "review_url": "https://app.spritecook.ai/ui-kits?kitId=68cbfd8f-14a2-45b5-98a2-46465e1b10d6",
+  "concept_asset_id": "a4727edc-b54e-4234-8f25-0844753165a9",
+  "sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+  "components": [
+    {
+      "name": "panel_paper_large",
+      "asset_id": "bbcf9cef-0881-4866-8fed-d3a0649ed637",
+      "type": "panel",
+      "group": null,
+      "state": null,
+      "width": 636,
+      "height": 263,
+      "scalable": true,
+      "nine_slice": {
+        "left": 32,
+        "top": 32,
+        "right": 32,
+        "bottom": 32
+      }
+    },
+    {
+      "name": "objective_card",
+      "asset_id": "2028b533-1587-4db6-a176-b9f10ed64d6c",
+      "type": "panel",
+      "group": null,
+      "state": null,
+      "width": 733,
+      "height": 290,
+      "scalable": true,
+      "nine_slice": {
+        "left": 36,
+        "top": 36,
+        "right": 36,
+        "bottom": 36
+      }
+    },
+    {
+      "name": "day_chip_light",
+      "asset_id": "1dd319e6-fd9a-481b-ad55-fb8c889fe6f0",
+      "type": "panel",
+      "group": null,
+      "state": null,
+      "width": 379,
+      "height": 156,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "title_plate_dark",
+      "asset_id": "ba76c1c9-661e-4e4e-90e8-f5b7b07ea166",
+      "type": "panel",
+      "group": null,
+      "state": null,
+      "width": 623,
+      "height": 91,
+      "scalable": true,
+      "nine_slice": {
+        "left": 24,
+        "top": 20,
+        "right": 24,
+        "bottom": 20
+      }
+    },
+    {
+      "name": "day_chip_dark",
+      "asset_id": "63d44c91-e294-4d20-adf7-4b41ec741387",
+      "type": "panel",
+      "group": null,
+      "state": null,
+      "width": 376,
+      "height": 139,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "hooked_fish_card",
+      "asset_id": "8c54d600-2836-4ec1-b8f2-37d4c8758e55",
+      "type": "panel",
+      "group": null,
+      "state": null,
+      "width": 721,
+      "height": 178,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "title_plate_light",
+      "asset_id": "00cd5890-4e22-4715-b087-3b932b32d6cc",
+      "type": "panel",
+      "group": null,
+      "state": null,
+      "width": 624,
+      "height": 108,
+      "scalable": true,
+      "nine_slice": {
+        "left": 24,
+        "top": 20,
+        "right": 24,
+        "bottom": 20
+      }
+    },
+    {
+      "name": "focus_frame",
+      "asset_id": "99be00a9-0c4d-4ad4-b2e3-f6c8c183ef37",
+      "type": "frame",
+      "group": null,
+      "state": null,
+      "width": 433,
+      "height": 175,
+      "scalable": true,
+      "nine_slice": {
+        "left": 28,
+        "top": 28,
+        "right": 28,
+        "bottom": 28
+      }
+    },
+    {
+      "name": "button_wide",
+      "asset_id": "8d287d6c-29a5-48db-8e1d-0058bbec710b",
+      "type": "button",
+      "group": "button_wide",
+      "state": "normal",
+      "width": 300,
+      "height": 132,
+      "scalable": true,
+      "nine_slice": {
+        "left": 28,
+        "top": 28,
+        "right": 28,
+        "bottom": 28
+      }
+    },
+    {
+      "name": "button_wide_hover",
+      "asset_id": "134df3ec-ab4d-49af-81d4-4fcc0b538fa9",
+      "type": "button",
+      "group": "button_wide",
+      "state": "hover",
+      "width": 304,
+      "height": 133,
+      "scalable": true,
+      "nine_slice": {
+        "left": 28,
+        "top": 28,
+        "right": 28,
+        "bottom": 28
+      }
+    },
+    {
+      "name": "button_wide_pressed",
+      "asset_id": "bad250b2-7d4b-46ec-85ad-06e956afec19",
+      "type": "button",
+      "group": "button_wide",
+      "state": "pressed",
+      "width": 300,
+      "height": 132,
+      "scalable": true,
+      "nine_slice": {
+        "left": 28,
+        "top": 28,
+        "right": 28,
+        "bottom": 28
+      }
+    },
+    {
+      "name": "button_wide_disabled",
+      "asset_id": "56f125f0-9e9d-4cdb-9593-98bce4c52389",
+      "type": "button",
+      "group": "button_wide",
+      "state": "disabled",
+      "width": 299,
+      "height": 132,
+      "scalable": true,
+      "nine_slice": {
+        "left": 28,
+        "top": 28,
+        "right": 28,
+        "bottom": 28
+      }
+    },
+    {
+      "name": "button_square_hover",
+      "asset_id": "ceecd478-5c2c-4c29-b04c-6c939d97ebd3",
+      "type": "button",
+      "group": "button_square",
+      "state": "hover",
+      "width": 122,
+      "height": 124,
+      "scalable": true,
+      "nine_slice": {
+        "left": 24,
+        "top": 24,
+        "right": 24,
+        "bottom": 24
+      }
+    },
+    {
+      "name": "button_square",
+      "asset_id": "80b8f588-df58-483b-b6d1-5f9fccedaf9f",
+      "type": "button",
+      "group": "button_square",
+      "state": "normal",
+      "width": 110,
+      "height": 112,
+      "scalable": true,
+      "nine_slice": {
+        "left": 24,
+        "top": 24,
+        "right": 24,
+        "bottom": 24
+      }
+    },
+    {
+      "name": "button_square_pressed",
+      "asset_id": "f3094ca7-3d23-40d7-8e3b-8a2bcd816019",
+      "type": "button",
+      "group": "button_square",
+      "state": "pressed",
+      "width": 110,
+      "height": 112,
+      "scalable": true,
+      "nine_slice": {
+        "left": 24,
+        "top": 24,
+        "right": 24,
+        "bottom": 24
+      }
+    },
+    {
+      "name": "button_square_disabled",
+      "asset_id": "5a498419-2bf3-471e-a0da-7ec890d50a4b",
+      "type": "button",
+      "group": "button_square",
+      "state": "disabled",
+      "width": 106,
+      "height": 109,
+      "scalable": true,
+      "nine_slice": {
+        "left": 24,
+        "top": 24,
+        "right": 24,
+        "bottom": 24
+      }
+    },
+    {
+      "name": "mouse_glyph_left",
+      "asset_id": "755ad31c-440d-4f45-816a-072771386364",
+      "type": "icon",
+      "group": "mouse_glyph",
+      "state": "left",
+      "width": 79,
+      "height": 114,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "mouse_glyph_right",
+      "asset_id": "b50378d0-4513-4428-a5e8-a8020dc69713",
+      "type": "icon",
+      "group": "mouse_glyph",
+      "state": "right",
+      "width": 81,
+      "height": 114,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "mouse_glyph_idle",
+      "asset_id": "cd0034c8-d745-4fcb-8c72-4aa310404aa4",
+      "type": "icon",
+      "group": "mouse_glyph",
+      "state": "idle",
+      "width": 81,
+      "height": 114,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "keycap_wide_hover",
+      "asset_id": "0debb49e-c832-4108-89f0-787c1b2e160c",
+      "type": "button",
+      "group": "keycap_wide",
+      "state": "hover",
+      "width": 183,
+      "height": 90,
+      "scalable": true,
+      "nine_slice": {
+        "left": 20,
+        "top": 20,
+        "right": 20,
+        "bottom": 20
+      }
+    },
+    {
+      "name": "keycap_wide_pressed",
+      "asset_id": "ec4df23b-4bf5-4280-92e7-3723c933c82c",
+      "type": "button",
+      "group": "keycap_wide",
+      "state": "pressed",
+      "width": 173,
+      "height": 90,
+      "scalable": true,
+      "nine_slice": {
+        "left": 20,
+        "top": 20,
+        "right": 20,
+        "bottom": 20
+      }
+    },
+    {
+      "name": "keycap_wide",
+      "asset_id": "864c6df3-ec83-453b-bfc2-2c1e8e072425",
+      "type": "button",
+      "group": "keycap_wide",
+      "state": "normal",
+      "width": 153,
+      "height": 86,
+      "scalable": true,
+      "nine_slice": {
+        "left": 20,
+        "top": 20,
+        "right": 20,
+        "bottom": 20
+      }
+    },
+    {
+      "name": "keycap_wide_disabled",
+      "asset_id": "601459fe-6c0c-4aa5-bd54-5d2fd474535f",
+      "type": "button",
+      "group": "keycap_wide",
+      "state": "disabled",
+      "width": 153,
+      "height": 86,
+      "scalable": true,
+      "nine_slice": {
+        "left": 20,
+        "top": 20,
+        "right": 20,
+        "bottom": 20
+      }
+    },
+    {
+      "name": "face_button_dark",
+      "asset_id": "8d695908-8f9f-4782-a855-b978ea57e0d4",
+      "type": "icon",
+      "group": "face_button",
+      "state": "dark",
+      "width": 79,
+      "height": 84,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "face_button_light",
+      "asset_id": "ff7336b4-0ad7-415a-97a1-f6b54a8bd8f8",
+      "type": "icon",
+      "group": "face_button",
+      "state": "light",
+      "width": 77,
+      "height": 83,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "face_button_amber",
+      "asset_id": "1c522acd-ce19-44f3-bdec-a4f0b9ebba30",
+      "type": "icon",
+      "group": "face_button",
+      "state": "amber",
+      "width": 80,
+      "height": 84,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "qte_ring_track",
+      "asset_id": "b104863f-e38f-4aae-84f1-183a51551982",
+      "type": "other",
+      "group": null,
+      "state": null,
+      "width": 522,
+      "height": 544,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "qte_ring_green_arc",
+      "asset_id": "461721ec-511a-4c4d-8f52-aee349bf10af",
+      "type": "fill",
+      "group": null,
+      "state": null,
+      "width": 186,
+      "height": 274,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "depth_gauge_frame",
+      "asset_id": "679c162d-9ab0-4f5d-8808-ed1bf2ad3d13",
+      "type": "frame",
+      "group": null,
+      "state": null,
+      "width": 176,
+      "height": 798,
+      "scalable": true,
+      "nine_slice": {
+        "left": 28,
+        "top": 36,
+        "right": 28,
+        "bottom": 36
+      }
+    },
+    {
+      "name": "tension_meter_track",
+      "asset_id": "5ace7689-3193-4280-8d71-12e2a7ea92b1",
+      "type": "track",
+      "group": null,
+      "state": null,
+      "width": 642,
+      "height": 90,
+      "scalable": true,
+      "nine_slice": {
+        "left": 24,
+        "top": 20,
+        "right": 24,
+        "bottom": 20
+      }
+    },
+    {
+      "name": "depth_gauge_water_fill",
+      "asset_id": "bc794389-48e5-4a4e-b51a-531959795f54",
+      "type": "fill",
+      "group": null,
+      "state": null,
+      "width": 85,
+      "height": 719,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "tension_zone_danger",
+      "asset_id": "464ae926-7e10-418d-8618-19b35ec8e336",
+      "type": "fill",
+      "group": "tension_zone",
+      "state": "danger",
+      "width": 189,
+      "height": 60,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "tension_zone_safe",
+      "asset_id": "61231ed4-1750-4c8b-8d50-0de1ca02d3c7",
+      "type": "fill",
+      "group": "tension_zone",
+      "state": "safe",
+      "width": 219,
+      "height": 60,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "tension_zone_empty",
+      "asset_id": "79f7abc8-61da-46a9-bf26-c238d406ccb9",
+      "type": "fill",
+      "group": "tension_zone",
+      "state": "empty",
+      "width": 212,
+      "height": 60,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "tension_marker",
+      "asset_id": "31596c2b-67a4-4eb3-8c1f-16c3d92a84ab",
+      "type": "handle",
+      "group": null,
+      "state": null,
+      "width": 46,
+      "height": 101,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "qte_ring_needle",
+      "asset_id": "0949b9dc-f0a4-4325-80d1-16941e85fa6b",
+      "type": "handle",
+      "group": null,
+      "state": null,
+      "width": 162,
+      "height": 105,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "depth_hook_marker",
+      "asset_id": "5a4a4d06-c246-4268-8ce3-58a7d9802bfb",
+      "type": "icon",
+      "group": null,
+      "state": null,
+      "width": 75,
+      "height": 59,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "sun_cast_left_a",
+      "asset_id": "b73200fa-821e-4cf7-833f-7139103256f2",
+      "type": "icon",
+      "group": "sun_cast",
+      "state": "left",
+      "width": 117,
+      "height": 119,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "sun_cast_left_d",
+      "asset_id": "a3920ffc-a845-4673-ac11-656a167c79d7",
+      "type": "icon",
+      "group": "sun_cast",
+      "state": "left",
+      "width": 117,
+      "height": 119,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "sun_cast_spent",
+      "asset_id": "b033f96f-7b08-44e0-b7de-ea1a3fb4d655",
+      "type": "icon",
+      "group": "sun_cast",
+      "state": "spent",
+      "width": 119,
+      "height": 119,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "sun_cast_left_b",
+      "asset_id": "efcadb7e-e71a-45bd-8b85-f7588d34db92",
+      "type": "icon",
+      "group": "sun_cast",
+      "state": "left",
+      "width": 118,
+      "height": 118,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "sun_cast_left_c",
+      "asset_id": "87999aa0-bbaa-4857-897a-db420d2c4335",
+      "type": "icon",
+      "group": "sun_cast",
+      "state": "left",
+      "width": 117,
+      "height": 118,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "power_bar_frame",
+      "asset_id": "65701c06-f465-4892-987b-1a67ad6a007c",
+      "type": "frame",
+      "group": null,
+      "state": null,
+      "width": 147,
+      "height": 508,
+      "scalable": true,
+      "nine_slice": {
+        "left": 28,
+        "top": 36,
+        "right": 28,
+        "bottom": 36
+      }
+    },
+    {
+      "name": "power_bar_fill_amber",
+      "asset_id": "a327f4c3-faa7-447c-ad8e-3362820e33fc",
+      "type": "fill",
+      "group": "power_fill",
+      "state": "amber",
+      "width": 76,
+      "height": 158,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "badge_golden_fish",
+      "asset_id": "8a2393af-df5d-419c-b041-c06aaf5fd781",
+      "type": "icon",
+      "group": null,
+      "state": null,
+      "width": 158,
+      "height": 157,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "tier_pip_filled_a",
+      "asset_id": "f5e797c7-b65a-452e-b705-396e8495f2ae",
+      "type": "icon",
+      "group": "tier_pip",
+      "state": "filled",
+      "width": 88,
+      "height": 88,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "tier_pip_filled_b",
+      "asset_id": "e9fef453-ae51-4841-980e-d690d77d16fa",
+      "type": "icon",
+      "group": "tier_pip",
+      "state": "filled",
+      "width": 89,
+      "height": 88,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "tier_pip_filled_c",
+      "asset_id": "07953614-8eed-4d23-9617-e80a675d7380",
+      "type": "icon",
+      "group": "tier_pip",
+      "state": "filled",
+      "width": 89,
+      "height": 88,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "tier_pip_empty_a",
+      "asset_id": "efa598a0-bfce-4d24-94e2-350d20f807f3",
+      "type": "icon",
+      "group": "tier_pip",
+      "state": "empty",
+      "width": 98,
+      "height": 96,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "tier_pip_empty_b",
+      "asset_id": "c84aefb9-c23e-454b-8ec6-bb9074226c7d",
+      "type": "icon",
+      "group": "tier_pip",
+      "state": "empty",
+      "width": 98,
+      "height": 97,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "tier_pip_empty_c",
+      "asset_id": "72d37e40-ed1f-417c-8110-2050dd71e2c4",
+      "type": "icon",
+      "group": "tier_pip",
+      "state": "empty",
+      "width": 97,
+      "height": 97,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "power_bar_fill_red",
+      "asset_id": "f369243b-316b-4793-960a-51f87e859825",
+      "type": "fill",
+      "group": "power_fill",
+      "state": "red",
+      "width": 76,
+      "height": 160,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "slot_normal",
+      "asset_id": "c3598edc-b371-4d0e-ae45-28b6e09862cd",
+      "type": "button",
+      "group": "slot",
+      "state": "normal",
+      "width": 261,
+      "height": 211,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "slot_selected",
+      "asset_id": "1e39b27b-3097-476f-9240-8adc1ce19b3c",
+      "type": "button",
+      "group": "slot",
+      "state": "selected",
+      "width": 264,
+      "height": 211,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    {
+      "name": "slot_locked",
+      "asset_id": "5a893f35-fbc9-4946-8896-da9851370e40",
+      "type": "button",
+      "group": "slot",
+      "state": "disabled",
+      "width": 258,
+      "height": 211,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      }
+    }
+  ]
+}

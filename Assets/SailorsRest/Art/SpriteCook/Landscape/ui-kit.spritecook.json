@@ -1,0 +1,1051 @@
+{
+  "version": 1,
+  "prompt_version": "ui-kit-v2",
+  "components": [
+    {
+      "asset_id": "bbcf9cef-0881-4866-8fed-d3a0649ed637",
+      "name": "panel_paper_large",
+      "component_type": "panel",
+      "group": null,
+      "state": null,
+      "scalable": true,
+      "nine_slice": {
+        "left": 32,
+        "top": 32,
+        "right": 32,
+        "bottom": 32
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 636,
+      "height": 263,
+      "x": 62,
+      "y": 46
+    },
+    {
+      "asset_id": "2028b533-1587-4db6-a176-b9f10ed64d6c",
+      "name": "objective_card",
+      "component_type": "panel",
+      "group": null,
+      "state": null,
+      "scalable": true,
+      "nine_slice": {
+        "left": 36,
+        "top": 36,
+        "right": 36,
+        "bottom": 36
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 733,
+      "height": 290,
+      "x": 785,
+      "y": 46
+    },
+    {
+      "asset_id": "1dd319e6-fd9a-481b-ad55-fb8c889fe6f0",
+      "name": "day_chip_light",
+      "component_type": "panel",
+      "group": null,
+      "state": null,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 379,
+      "height": 156,
+      "x": 1592,
+      "y": 150
+    },
+    {
+      "asset_id": "ba76c1c9-661e-4e4e-90e8-f5b7b07ea166",
+      "name": "title_plate_dark",
+      "component_type": "panel",
+      "group": null,
+      "state": null,
+      "scalable": true,
+      "nine_slice": {
+        "left": 24,
+        "top": 20,
+        "right": 24,
+        "bottom": 20
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 623,
+      "height": 91,
+      "x": 67,
+      "y": 326
+    },
+    {
+      "asset_id": "63d44c91-e294-4d20-adf7-4b41ec741387",
+      "name": "day_chip_dark",
+      "component_type": "panel",
+      "group": null,
+      "state": null,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 376,
+      "height": 139,
+      "x": 1591,
+      "y": 338
+    },
+    {
+      "asset_id": "8c54d600-2836-4ec1-b8f2-37d4c8758e55",
+      "name": "hooked_fish_card",
+      "component_type": "panel",
+      "group": null,
+      "state": null,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 721,
+      "height": 178,
+      "x": 789,
+      "y": 361
+    },
+    {
+      "asset_id": "00cd5890-4e22-4715-b087-3b932b32d6cc",
+      "name": "title_plate_light",
+      "component_type": "panel",
+      "group": null,
+      "state": null,
+      "scalable": true,
+      "nine_slice": {
+        "left": 24,
+        "top": 20,
+        "right": 24,
+        "bottom": 20
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 624,
+      "height": 108,
+      "x": 67,
+      "y": 434
+    },
+    {
+      "asset_id": "99be00a9-0c4d-4ad4-b2e3-f6c8c183ef37",
+      "name": "focus_frame",
+      "component_type": "frame",
+      "group": null,
+      "state": null,
+      "scalable": true,
+      "nine_slice": {
+        "left": 28,
+        "top": 28,
+        "right": 28,
+        "bottom": 28
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 433,
+      "height": 175,
+      "x": 1553,
+      "y": 548
+    },
+    {
+      "asset_id": "8d287d6c-29a5-48db-8e1d-0058bbec710b",
+      "name": "button_wide",
+      "component_type": "button",
+      "group": "button_wide",
+      "state": "normal",
+      "scalable": true,
+      "nine_slice": {
+        "left": 28,
+        "top": 28,
+        "right": 28,
+        "bottom": 28
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 300,
+      "height": 132,
+      "x": 62,
+      "y": 582
+    },
+    {
+      "asset_id": "134df3ec-ab4d-49af-81d4-4fcc0b538fa9",
+      "name": "button_wide_hover",
+      "component_type": "button",
+      "group": "button_wide",
+      "state": "hover",
+      "scalable": true,
+      "nine_slice": {
+        "left": 28,
+        "top": 28,
+        "right": 28,
+        "bottom": 28
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 304,
+      "height": 133,
+      "x": 421,
+      "y": 582
+    },
+    {
+      "asset_id": "bad250b2-7d4b-46ec-85ad-06e956afec19",
+      "name": "button_wide_pressed",
+      "component_type": "button",
+      "group": "button_wide",
+      "state": "pressed",
+      "scalable": true,
+      "nine_slice": {
+        "left": 28,
+        "top": 28,
+        "right": 28,
+        "bottom": 28
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 300,
+      "height": 132,
+      "x": 791,
+      "y": 582
+    },
+    {
+      "asset_id": "56f125f0-9e9d-4cdb-9593-98bce4c52389",
+      "name": "button_wide_disabled",
+      "component_type": "button",
+      "group": "button_wide",
+      "state": "disabled",
+      "scalable": true,
+      "nine_slice": {
+        "left": 28,
+        "top": 28,
+        "right": 28,
+        "bottom": 28
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 299,
+      "height": 132,
+      "x": 1147,
+      "y": 582
+    },
+    {
+      "asset_id": "ceecd478-5c2c-4c29-b04c-6c939d97ebd3",
+      "name": "button_square_hover",
+      "component_type": "button",
+      "group": "button_square",
+      "state": "hover",
+      "scalable": true,
+      "nine_slice": {
+        "left": 24,
+        "top": 24,
+        "right": 24,
+        "bottom": 24
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 122,
+      "height": 124,
+      "x": 199,
+      "y": 754
+    },
+    {
+      "asset_id": "80b8f588-df58-483b-b6d1-5f9fccedaf9f",
+      "name": "button_square",
+      "component_type": "button",
+      "group": "button_square",
+      "state": "normal",
+      "scalable": true,
+      "nine_slice": {
+        "left": 24,
+        "top": 24,
+        "right": 24,
+        "bottom": 24
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 110,
+      "height": 112,
+      "x": 62,
+      "y": 759
+    },
+    {
+      "asset_id": "f3094ca7-3d23-40d7-8e3b-8a2bcd816019",
+      "name": "button_square_pressed",
+      "component_type": "button",
+      "group": "button_square",
+      "state": "pressed",
+      "scalable": true,
+      "nine_slice": {
+        "left": 24,
+        "top": 24,
+        "right": 24,
+        "bottom": 24
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 110,
+      "height": 112,
+      "x": 342,
+      "y": 759
+    },
+    {
+      "asset_id": "5a498419-2bf3-471e-a0da-7ec890d50a4b",
+      "name": "button_square_disabled",
+      "component_type": "button",
+      "group": "button_square",
+      "state": "disabled",
+      "scalable": true,
+      "nine_slice": {
+        "left": 24,
+        "top": 24,
+        "right": 24,
+        "bottom": 24
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 106,
+      "height": 109,
+      "x": 477,
+      "y": 761
+    },
+    {
+      "asset_id": "755ad31c-440d-4f45-816a-072771386364",
+      "name": "mouse_glyph_left",
+      "component_type": "icon",
+      "group": "mouse_glyph",
+      "state": "left",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 79,
+      "height": 114,
+      "x": 1671,
+      "y": 769
+    },
+    {
+      "asset_id": "b50378d0-4513-4428-a5e8-a8020dc69713",
+      "name": "mouse_glyph_right",
+      "component_type": "icon",
+      "group": "mouse_glyph",
+      "state": "right",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 81,
+      "height": 114,
+      "x": 1783,
+      "y": 769
+    },
+    {
+      "asset_id": "cd0034c8-d745-4fcb-8c72-4aa310404aa4",
+      "name": "mouse_glyph_idle",
+      "component_type": "icon",
+      "group": "mouse_glyph",
+      "state": "idle",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 81,
+      "height": 114,
+      "x": 1894,
+      "y": 769
+    },
+    {
+      "asset_id": "0debb49e-c832-4108-89f0-787c1b2e160c",
+      "name": "keycap_wide_hover",
+      "component_type": "button",
+      "group": "keycap_wide",
+      "state": "hover",
+      "scalable": true,
+      "nine_slice": {
+        "left": 20,
+        "top": 20,
+        "right": 20,
+        "bottom": 20
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 183,
+      "height": 90,
+      "x": 786,
+      "y": 771
+    },
+    {
+      "asset_id": "ec4df23b-4bf5-4280-92e7-3723c933c82c",
+      "name": "keycap_wide_pressed",
+      "component_type": "button",
+      "group": "keycap_wide",
+      "state": "pressed",
+      "scalable": true,
+      "nine_slice": {
+        "left": 20,
+        "top": 20,
+        "right": 20,
+        "bottom": 20
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 173,
+      "height": 90,
+      "x": 990,
+      "y": 771
+    },
+    {
+      "asset_id": "864c6df3-ec83-453b-bfc2-2c1e8e072425",
+      "name": "keycap_wide",
+      "component_type": "button",
+      "group": "keycap_wide",
+      "state": "normal",
+      "scalable": true,
+      "nine_slice": {
+        "left": 20,
+        "top": 20,
+        "right": 20,
+        "bottom": 20
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 153,
+      "height": 86,
+      "x": 606,
+      "y": 773
+    },
+    {
+      "asset_id": "601459fe-6c0c-4aa5-bd54-5d2fd474535f",
+      "name": "keycap_wide_disabled",
+      "component_type": "button",
+      "group": "keycap_wide",
+      "state": "disabled",
+      "scalable": true,
+      "nine_slice": {
+        "left": 20,
+        "top": 20,
+        "right": 20,
+        "bottom": 20
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 153,
+      "height": 86,
+      "x": 1184,
+      "y": 773
+    },
+    {
+      "asset_id": "8d695908-8f9f-4782-a855-b978ea57e0d4",
+      "name": "face_button_dark",
+      "component_type": "icon",
+      "group": "face_button",
+      "state": "dark",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 79,
+      "height": 84,
+      "x": 1562,
+      "y": 777
+    },
+    {
+      "asset_id": "ff7336b4-0ad7-415a-97a1-f6b54a8bd8f8",
+      "name": "face_button_light",
+      "component_type": "icon",
+      "group": "face_button",
+      "state": "light",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 77,
+      "height": 83,
+      "x": 1365,
+      "y": 778
+    },
+    {
+      "asset_id": "1c522acd-ce19-44f3-bdec-a4f0b9ebba30",
+      "name": "face_button_amber",
+      "component_type": "icon",
+      "group": "face_button",
+      "state": "amber",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 80,
+      "height": 84,
+      "x": 1461,
+      "y": 778
+    },
+    {
+      "asset_id": "b104863f-e38f-4aae-84f1-183a51551982",
+      "name": "qte_ring_track",
+      "component_type": "other",
+      "group": null,
+      "state": null,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 522,
+      "height": 544,
+      "x": 81,
+      "y": 913
+    },
+    {
+      "asset_id": "461721ec-511a-4c4d-8f52-aee349bf10af",
+      "name": "qte_ring_green_arc",
+      "component_type": "fill",
+      "group": null,
+      "state": null,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 186,
+      "height": 274,
+      "x": 643,
+      "y": 964
+    },
+    {
+      "asset_id": "679c162d-9ab0-4f5d-8808-ed1bf2ad3d13",
+      "name": "depth_gauge_frame",
+      "component_type": "frame",
+      "group": null,
+      "state": null,
+      "scalable": true,
+      "nine_slice": {
+        "left": 28,
+        "top": 36,
+        "right": 28,
+        "bottom": 36
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 176,
+      "height": 798,
+      "x": 1578,
+      "y": 969
+    },
+    {
+      "asset_id": "5ace7689-3193-4280-8d71-12e2a7ea92b1",
+      "name": "tension_meter_track",
+      "component_type": "track",
+      "group": null,
+      "state": null,
+      "scalable": true,
+      "nine_slice": {
+        "left": 24,
+        "top": 20,
+        "right": 24,
+        "bottom": 20
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 642,
+      "height": 90,
+      "x": 873,
+      "y": 987
+    },
+    {
+      "asset_id": "bc794389-48e5-4a4e-b51a-531959795f54",
+      "name": "depth_gauge_water_fill",
+      "component_type": "fill",
+      "group": null,
+      "state": null,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 85,
+      "height": 719,
+      "x": 1809,
+      "y": 1036
+    },
+    {
+      "asset_id": "464ae926-7e10-418d-8618-19b35ec8e336",
+      "name": "tension_zone_danger",
+      "component_type": "fill",
+      "group": "tension_zone",
+      "state": "danger",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 189,
+      "height": 60,
+      "x": 876,
+      "y": 1119
+    },
+    {
+      "asset_id": "61231ed4-1750-4c8b-8d50-0de1ca02d3c7",
+      "name": "tension_zone_safe",
+      "component_type": "fill",
+      "group": "tension_zone",
+      "state": "safe",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 219,
+      "height": 60,
+      "x": 1075,
+      "y": 1119
+    },
+    {
+      "asset_id": "79f7abc8-61da-46a9-bf26-c238d406ccb9",
+      "name": "tension_zone_empty",
+      "component_type": "fill",
+      "group": "tension_zone",
+      "state": "empty",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 212,
+      "height": 60,
+      "x": 1303,
+      "y": 1119
+    },
+    {
+      "asset_id": "31596c2b-67a4-4eb3-8c1f-16c3d92a84ab",
+      "name": "tension_marker",
+      "component_type": "handle",
+      "group": null,
+      "state": null,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 46,
+      "height": 101,
+      "x": 1158,
+      "y": 1223
+    },
+    {
+      "asset_id": "0949b9dc-f0a4-4325-80d1-16941e85fa6b",
+      "name": "qte_ring_needle",
+      "component_type": "handle",
+      "group": null,
+      "state": null,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 162,
+      "height": 105,
+      "x": 705,
+      "y": 1293
+    },
+    {
+      "asset_id": "5a4a4d06-c246-4268-8ce3-58a7d9802bfb",
+      "name": "depth_hook_marker",
+      "component_type": "icon",
+      "group": null,
+      "state": null,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 75,
+      "height": 59,
+      "x": 1923,
+      "y": 1371
+    },
+    {
+      "asset_id": "b73200fa-821e-4cf7-833f-7139103256f2",
+      "name": "sun_cast_left_a",
+      "component_type": "icon",
+      "group": "sun_cast",
+      "state": "left",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 117,
+      "height": 119,
+      "x": 497,
+      "y": 1470
+    },
+    {
+      "asset_id": "a3920ffc-a845-4673-ac11-656a167c79d7",
+      "name": "sun_cast_left_d",
+      "component_type": "icon",
+      "group": "sun_cast",
+      "state": "left",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 117,
+      "height": 119,
+      "x": 982,
+      "y": 1470
+    },
+    {
+      "asset_id": "b033f96f-7b08-44e0-b7de-ea1a3fb4d655",
+      "name": "sun_cast_spent",
+      "component_type": "icon",
+      "group": "sun_cast",
+      "state": "spent",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 119,
+      "height": 119,
+      "x": 1143,
+      "y": 1470
+    },
+    {
+      "asset_id": "efcadb7e-e71a-45bd-8b85-f7588d34db92",
+      "name": "sun_cast_left_b",
+      "component_type": "icon",
+      "group": "sun_cast",
+      "state": "left",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 118,
+      "height": 118,
+      "x": 659,
+      "y": 1471
+    },
+    {
+      "asset_id": "87999aa0-bbaa-4857-897a-db420d2c4335",
+      "name": "sun_cast_left_c",
+      "component_type": "icon",
+      "group": "sun_cast",
+      "state": "left",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 117,
+      "height": 118,
+      "x": 820,
+      "y": 1471
+    },
+    {
+      "asset_id": "65701c06-f465-4892-987b-1a67ad6a007c",
+      "name": "power_bar_frame",
+      "component_type": "frame",
+      "group": null,
+      "state": null,
+      "scalable": true,
+      "nine_slice": {
+        "left": 28,
+        "top": 36,
+        "right": 28,
+        "bottom": 36
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 147,
+      "height": 508,
+      "x": 79,
+      "y": 1481
+    },
+    {
+      "asset_id": "a327f4c3-faa7-447c-ad8e-3362820e33fc",
+      "name": "power_bar_fill_amber",
+      "component_type": "fill",
+      "group": "power_fill",
+      "state": "amber",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 76,
+      "height": 158,
+      "x": 282,
+      "y": 1566
+    },
+    {
+      "asset_id": "8a2393af-df5d-419c-b041-c06aaf5fd781",
+      "name": "badge_golden_fish",
+      "component_type": "icon",
+      "group": null,
+      "state": null,
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 158,
+      "height": 157,
+      "x": 1331,
+      "y": 1621
+    },
+    {
+      "asset_id": "f5e797c7-b65a-452e-b705-396e8495f2ae",
+      "name": "tier_pip_filled_a",
+      "component_type": "icon",
+      "group": "tier_pip",
+      "state": "filled",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 88,
+      "height": 88,
+      "x": 458,
+      "y": 1647
+    },
+    {
+      "asset_id": "e9fef453-ae51-4841-980e-d690d77d16fa",
+      "name": "tier_pip_filled_b",
+      "component_type": "icon",
+      "group": "tier_pip",
+      "state": "filled",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 89,
+      "height": 88,
+      "x": 592,
+      "y": 1647
+    },
+    {
+      "asset_id": "07953614-8eed-4d23-9617-e80a675d7380",
+      "name": "tier_pip_filled_c",
+      "component_type": "icon",
+      "group": "tier_pip",
+      "state": "filled",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 89,
+      "height": 88,
+      "x": 725,
+      "y": 1647
+    },
+    {
+      "asset_id": "efa598a0-bfce-4d24-94e2-350d20f807f3",
+      "name": "tier_pip_empty_a",
+      "component_type": "icon",
+      "group": "tier_pip",
+      "state": "empty",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 98,
+      "height": 96,
+      "x": 871,
+      "y": 1647
+    },
+    {
+      "asset_id": "c84aefb9-c23e-454b-8ec6-bb9074226c7d",
+      "name": "tier_pip_empty_b",
+      "component_type": "icon",
+      "group": "tier_pip",
+      "state": "empty",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 98,
+      "height": 97,
+      "x": 1016,
+      "y": 1647
+    },
+    {
+      "asset_id": "72d37e40-ed1f-417c-8110-2050dd71e2c4",
+      "name": "tier_pip_empty_c",
+      "component_type": "icon",
+      "group": "tier_pip",
+      "state": "empty",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 97,
+      "height": 97,
+      "x": 1162,
+      "y": 1647
+    },
+    {
+      "asset_id": "f369243b-316b-4793-960a-51f87e859825",
+      "name": "power_bar_fill_red",
+      "component_type": "fill",
+      "group": "power_fill",
+      "state": "red",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 76,
+      "height": 160,
+      "x": 282,
+      "y": 1726
+    },
+    {
+      "asset_id": "c3598edc-b371-4d0e-ae45-28b6e09862cd",
+      "name": "slot_normal",
+      "component_type": "button",
+      "group": "slot",
+      "state": "normal",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 261,
+      "height": 211,
+      "x": 430,
+      "y": 1798
+    },
+    {
+      "asset_id": "1e39b27b-3097-476f-9240-8adc1ce19b3c",
+      "name": "slot_selected",
+      "component_type": "button",
+      "group": "slot",
+      "state": "selected",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 264,
+      "height": 211,
+      "x": 734,
+      "y": 1798
+    },
+    {
+      "asset_id": "5a893f35-fbc9-4946-8896-da9851370e40",
+      "name": "slot_locked",
+      "component_type": "button",
+      "group": "slot",
+      "state": "disabled",
+      "scalable": false,
+      "nine_slice": {
+        "left": 0,
+        "top": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "source_sheet_asset_id": "01b0a685-304a-4389-9aac-ba1d1d78763b",
+      "width": 258,
+      "height": 211,
+      "x": 1040,
+      "y": 1798
+    }
+  ]
+}

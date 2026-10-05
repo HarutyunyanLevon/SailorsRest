@@ -1,0 +1,113 @@
+{
+  "note": "SpriteCook idle loops. Links are signed and expire about an hour after writing; ask Claude to refresh this file if a download fails.",
+  "items": [
+    {
+      "name": "fisherman_idle",
+      "asset_id": "113cdde1-cbd6-46a2-9043-4ac941ffbef8",
+      "url": "https://api.spritecook.ai/v1/assets/113cdde1-cbd6-46a2-9043-4ac941ffbef8/signed-content/raw?sig=SuS2CKePURsVzJ7wqV5U2vTuovNV7FoCLLh0o7l5eug&exp=1791198800",
+      "frameWidth": 80,
+      "frameHeight": 80,
+      "frames": 8,
+      "fps": 8,
+      "still": "fisherman",
+      "pivotX": 0.5,
+      "pivotY": 0
+    },
+    {
+      "name": "fishmonger_idle",
+      "asset_id": "c5a15c01-a396-4beb-9b49-270310f043c1",
+      "url": "https://api.spritecook.ai/v1/assets/c5a15c01-a396-4beb-9b49-270310f043c1/signed-content/raw?sig=k0fBANulW16nyqpngWLhZ7Wn0MN93a2yyK0SDghs4Cc&exp=1791198803",
+      "frameWidth": 212,
+      "frameHeight": 212,
+      "frames": 8,
+      "fps": 8,
+      "still": "fishmonger",
+      "pivotX": 0.5,
+      "pivotY": 0
+    },
+    {
+      "name": "fish_carp_idle",
+      "asset_id": "1cca759c-0515-4c22-ab41-5d9dbe9b4509",
+      "url": "https://api.spritecook.ai/v1/assets/1cca759c-0515-4c22-ab41-5d9dbe9b4509/signed-content/raw?sig=Uf6RVBUS-g9F9E6BW6U7ps6wB91KdkOZPFpmxZeDNnA&exp=1791198806",
+      "frameWidth": 180,
+      "frameHeight": 180,
+      "frames": 8,
+      "fps": 8,
+      "still": "fish_carp",
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "name": "fish_perch_idle",
+      "asset_id": "5d6336de-be1d-4857-a011-ec3b8cc15604",
+      "url": "https://api.spritecook.ai/v1/assets/5d6336de-be1d-4857-a011-ec3b8cc15604/signed-content/raw?sig=0-bfShLQW9RjPA1ABBUa58_ghe1D_JWSGb9cA8KiWsE&exp=1791198809",
+      "frameWidth": 102,
+      "frameHeight": 102,
+      "frames": 8,
+      "fps": 8,
+      "still": "fish_perch",
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "name": "fish_catfish_idle",
+      "asset_id": "c6935e97-ea2c-4601-8256-df5552cd3c31",
+      "url": "https://api.spritecook.ai/v1/assets/c6935e97-ea2c-4601-8256-df5552cd3c31/signed-content/raw?sig=saB0aJKvUsyMYsQWhhROZppSDZYPoJ0D7svceO0iAIE&exp=1791198812",
+      "frameWidth": 102,
+      "frameHeight": 102,
+      "frames": 8,
+      "fps": 8,
+      "still": "fish_catfish",
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "name": "weeds_idle",
+      "asset_id": "ee239d4b-2279-4a7f-a56d-5883887f9501",
+      "url": "https://api.spritecook.ai/v1/assets/ee239d4b-2279-4a7f-a56d-5883887f9501/signed-content/raw?sig=3MRO0L_ym7Rxx6-mM70jXd7rLxzetnSJliUBBjreXcA&exp=1791198814",
+      "frameWidth": 86,
+      "frameHeight": 86,
+      "frames": 8,
+      "fps": 8,
+      "still": "weeds",
+      "pivotX": 0.5,
+      "pivotY": 0
+    },
+    {
+      "name": "dock_idle",
+      "asset_id": "9c9b92b1-7547-4988-b702-cfbf9f9d948c",
+      "url": "https://api.spritecook.ai/v1/assets/9c9b92b1-7547-4988-b702-cfbf9f9d948c/signed-content/raw?sig=JySNHyc_OErTseHY096HTUt6g-4fn36b2g-ReZteyNk&exp=1791198817",
+      "frameWidth": 216,
+      "frameHeight": 216,
+      "frames": 8,
+      "fps": 8,
+      "still": "dock",
+      "pivotX": 1,
+      "pivotY": 0
+    },
+    {
+      "name": "map_pond_idle",
+      "asset_id": "8f125e21-9c2f-43a1-ae77-5f4c49514a08",
+      "url": "https://api.spritecook.ai/v1/assets/8f125e21-9c2f-43a1-ae77-5f4c49514a08/signed-content/raw?sig=iiucyd0E-rdMFs4LzPTZKEdml1KH_MgqozsOw-ky_NM&exp=1791198820",
+      "frameWidth": 96,
+      "frameHeight": 96,
+      "frames": 8,
+      "fps": 8,
+      "still": "map_pond",
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    },
+    {
+      "name": "map_market_idle",
+      "asset_id": "80936274-9df0-4f8e-94c3-6f4175965f97",
+      "url": "https://api.spritecook.ai/v1/assets/80936274-9df0-4f8e-94c3-6f4175965f97/signed-content/raw?sig=VNtcYlp7CKaB-FC8yscGY256K42l2lDzzW4baX2V1e0&exp=1791198823",
+      "frameWidth": 160,
+      "frameHeight": 160,
+      "frames": 8,
+      "fps": 8,
+      "still": "map_market",
+      "pivotX": 0.5,
+      "pivotY": 0.5
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "project_id": "94971719-0975-4800-be0e-0286a0f41c24",
+  "style_guide_asset_id": "a4727edc-b54e-4234-8f25-0844753165a9",
+  "items": [
+    {
+      "name": "sky_backdrop",
+      "asset_id": "114c5eb1-e9bc-428a-9b35-f0ad53ae57d4",
+      "url": "https://api.spritecook.ai/v1/assets/114c5eb1-e9bc-428a-9b35-f0ad53ae57d4/signed-content/pixel?sig=eHMHCjbMWzZWQVBRAHvD_iv562Lozb7PbKp9b1tVr3E&exp=1791149623",
+      "worldWidth": 40,
+      "pivotX": 0.5,
+      "pivotY": 0,
+      "trim": false
+    },
+    {
+      "name": "underwater_backdrop",
+      "asset_id": "dd576f41-7bcd-434f-92fd-f881f3bb22d8",
+      "url": "https://api.spritecook.ai/v1/assets/dd576f41-7bcd-434f-92fd-f881f3bb22d8/signed-content/pixel?sig=hF61y-6gIk-vh342Z-zjjZjlHoClk1PEQygPHeZ04i4&exp=1791149592",
+      "worldWidth": 40,
+      "pivotX": 0.5,
+      "pivotY": 1,
+      "trim": false
+    },
+    {
+      "name": "dock",
+      "asset_id": "315b72b5-35d4-488c-8592-89eea2a008a4",
+      "url": "https://api.spritecook.ai/v1/assets/315b72b5-35d4-488c-8592-89eea2a008a4/signed-content/pixel?sig=ejeVvA-3-7AkuqpODPrwq9YWVy7yVSTLIwQC7oOWIhQ&exp=1791150893",
+      "worldWidth": 6,
+      "pivotX": 1,
+      "pivotY": 0,
+      "trim": true
+    },
+    {
+      "name": "fisherman",
+      "asset_id": "e8a69084-28b5-45f0-a7ec-fc1aa1b98415",
+      "url": "https://api.spritecook.ai/v1/assets/e8a69084-28b5-45f0-a7ec-fc1aa1b98415/signed-content/pixel?sig=JsgC3Srh9SLsaAqXPGtSQJZCrpMxrfz3hesBbzfKP5s&exp=1791149592",
+      "worldWidth": 2.4,
+      "pivotX": 0.5,
+      "pivotY": 0,
+      "trim": true
+    },
+    {
+      "name": "bobber",
+      "asset_id": "1901018f-9d99-47a1-bc9a-49b7d2e9bfa4",
+      "url": "https://api.spritecook.ai/v1/assets/1901018f-9d99-47a1-bc9a-49b7d2e9bfa4/signed-content/pixel?sig=IYBIYPPVAEhmyT-3PbnqWpjnLJ6OFR6B1S72wdeKqBw&exp=1791149592",
+      "worldWidth": 0.55,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "trim": true
+    },
+    {
+      "name": "weeds",
+      "asset_id": "f9c316d1-2aa0-48bf-acd7-e3a92b0fedf8",
+      "url": "https://api.spritecook.ai/v1/assets/f9c316d1-2aa0-48bf-acd7-e3a92b0fedf8/signed-content/pixel?sig=Y_e6KE-pKplYI0SH66a0c-1dq7K2in4wFUu-fzrFZEw&exp=1791149592",
+      "worldWidth": 2.6,
+      "pivotX": 0.5,
+      "pivotY": 0,
+      "trim": true
+    },
+    {
+      "name": "fish_perch",
+      "asset_id": "1c09ae2e-f004-478e-9d91-c00b0004c878",
+      "url": "https://api.spritecook.ai/v1/assets/1c09ae2e-f004-478e-9d91-c00b0004c878/signed-content/pixel?sig=qQi0h5WXU42qxaQwemrnoceLrhr5z_yPF1oRKtvX87Y&exp=1791149592",
+      "worldWidth": 1.0,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "trim": true
+    },
+    {
+      "name": "fish_carp",
+      "asset_id": "093f5f30-313c-4f97-8289-d6d202fa5ae7",
+      "url": "https://api.spritecook.ai/v1/assets/093f5f30-313c-4f97-8289-d6d202fa5ae7/signed-content/pixel?sig=4FfbZKiwDoBMDEgoy1H16Ak5yoQjIUkMGiWSNd8ru6U&exp=1791149592",
+      "worldWidth": 1.25,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "trim": true
+    },
+    {
+      "name": "fish_catfish",
+      "asset_id": "b4695428-8a3b-40d3-b940-dda4607f4d8b",
+      "url": "https://api.spritecook.ai/v1/assets/b4695428-8a3b-40d3-b940-dda4607f4d8b/signed-content/pixel?sig=WxMHu_a5OzpDQ1NK0m6Qc465chtdel98bClqHia9YdU&exp=1791149592",
+      "worldWidth": 1.5,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "trim": true
+    },
+    {
+      "name": "market_backdrop",
+      "asset_id": "bcbd8e47-d303-432d-b355-0689550fc2cc",
+      "url": "https://api.spritecook.ai/v1/assets/bcbd8e47-d303-432d-b355-0689550fc2cc/signed-content/pixel?sig=HJyDM6VGGGJYjs79-SIOZ-vCs4tSuNLfSwEBhZv-1aw&exp=1791149592",
+      "worldWidth": 30,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "trim": false
+    },
+    {
+      "name": "fishmonger",
+      "asset_id": "ce1cfe84-9786-4997-a521-291734f9b9a6",
+      "url": "https://api.spritecook.ai/v1/assets/ce1cfe84-9786-4997-a521-291734f9b9a6/signed-content/pixel?sig=E0SzvoDIko_UPMhp1L0ZkS-w6tJsn6VHAlTpyH2lzWU&exp=1791149592",
+      "worldWidth": 4,
+      "pivotX": 0.5,
+      "pivotY": 0,
+      "trim": true
+    },
+    {
+      "name": "map_backdrop",
+      "asset_id": "e6125fa0-a130-4189-81fd-13a6554ae45b",
+      "url": "https://api.spritecook.ai/v1/assets/e6125fa0-a130-4189-81fd-13a6554ae45b/signed-content/pixel?sig=g4LW5IqujZtN8Vve8GkCNmDmWfGXEZXvCwjGjcq9M7U&exp=1791149592",
+      "worldWidth": 30,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "trim": false
+    },
+    {
+      "name": "map_pond",
+      "asset_id": "332b2b1e-0070-4ee0-ac45-f165b3a2607b",
+      "url": "https://api.spritecook.ai/v1/assets/332b2b1e-0070-4ee0-ac45-f165b3a2607b/signed-content/pixel?sig=QqbVUPQkQLc-UIF4agkso5ECN62HzijutcBaSAcuhFA&exp=1791149592",
+      "worldWidth": 3,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "trim": true
+    },
+    {
+      "name": "map_market",
+      "asset_id": "cc198598-3c42-417c-9b2b-9531e06ebd3e",
+      "url": "https://api.spritecook.ai/v1/assets/cc198598-3c42-417c-9b2b-9531e06ebd3e/signed-content/pixel?sig=juyEQkNghTrmYWg-_-OmMB78c-Y8x6ucofqnEWTJzQ0&exp=1791149592",
+      "worldWidth": 3,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "trim": true
+    },
+    {
+      "name": "icon_rod",
+      "asset_id": "80469403-d78c-44c4-aa30-4c652b4039fb",
+      "url": "https://api.spritecook.ai/v1/assets/80469403-d78c-44c4-aa30-4c652b4039fb/signed-content/pixel?sig=rRc9z-JKOme0bxANy1fkRNrxwPM62sm67POeCOG8MPg&exp=1791149592",
+      "worldWidth": 2,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "trim": true
+    },
+    {
+      "name": "icon_hook",
+      "asset_id": "1b44862a-ed8e-4f31-a4e0-40ecb0f7e04d",
+      "url": "https://api.spritecook.ai/v1/assets/1b44862a-ed8e-4f31-a4e0-40ecb0f7e04d/signed-content/pixel?sig=E_CPFG997skq3CrULoaaYiDgr6v4UuIuomOHMiGYgG0&exp=1791149592",
+      "worldWidth": 2,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "trim": true
+    },
+    {
+      "name": "icon_line",
+      "asset_id": "272a3df9-c05a-4e1a-8ced-51b4e65ffcb3",
+      "url": "https://api.spritecook.ai/v1/assets/272a3df9-c05a-4e1a-8ced-51b4e65ffcb3/signed-content/pixel?sig=JkbY2TA1b3_J6F49H9OjuY90xRKqpwtjXZ6pClJhWkA&exp=1791149592",
+      "worldWidth": 2,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "trim": true
+    },
+    {
+      "name": "icon_reel",
+      "asset_id": "9719d881-c822-45c7-b627-af6c7d8f85f9",
+      "url": "https://api.spritecook.ai/v1/assets/9719d881-c822-45c7-b627-af6c7d8f85f9/signed-content/pixel?sig=yN3j9jb7ykDD-3jdUHdhPeWmP4tPzHXrMBPwfUcmcJw&exp=1791149592",
+      "worldWidth": 2,
+      "pivotX": 0.5,
+      "pivotY": 0.5,
+      "trim": true
+    }
+  ]
+}

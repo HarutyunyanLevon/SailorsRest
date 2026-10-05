@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb94fbd1dbbdea144b20ae7081de2e0b, type: 3}
+  m_Name: Species_Carp
+  m_EditorClassIdentifier: Assembly-CSharp::SailorsRest.FishSpecies
+  id: carp
+  displayName: Carp
+  sprite: {fileID: 21300000, guid: 38beec03e387ad6429addf0f2762bdb1, type: 3}
+  swimFrames:
+  - {fileID: 221979101414681885, guid: c9c1e696e3def0d44bdac48bcb291810, type: 3}
+  - {fileID: -1367955841817106009, guid: c9c1e696e3def0d44bdac48bcb291810, type: 3}
+  - {fileID: 3437481625332720593, guid: c9c1e696e3def0d44bdac48bcb291810, type: 3}
+  - {fileID: -4985415545751004965, guid: c9c1e696e3def0d44bdac48bcb291810, type: 3}
+  - {fileID: 8089418146828672858, guid: c9c1e696e3def0d44bdac48bcb291810, type: 3}
+  - {fileID: -6497111274950349779, guid: c9c1e696e3def0d44bdac48bcb291810, type: 3}
+  - {fileID: 824775464797497093, guid: c9c1e696e3def0d44bdac48bcb291810, type: 3}
+  - {fileID: -3996203322997833402, guid: c9c1e696e3def0d44bdac48bcb291810, type: 3}
+  swimFps: 8
+  minDepth: 2.5
+  maxDepth: 8
+  spawnWeight: 1
+  wildTierWeights:
+  - 0.75
+  - 0.25
+  - 0
+  weightRangeKg:
+  - {x: 0.4, y: 0.9}
+  - {x: 1.1, y: 2}
+  - {x: 2.6, y: 4.4}
+  qteZoneDegrees:
+  - 70
+  - 45
+  - 30
+  qteArcCount: 020000000100000001000000
+  qteSpeed:
+  - 200
+  - 260
+  - 320
+  surgeStrength:
+  - 0.12
+  - 0.2
+  - 0.28
+  pricePerKg: 28
+  goldenChance: 0.05

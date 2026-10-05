@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f012e2a7f30a94ea8ad120e59c2ad3, type: 3}
+  m_Name: UiSkin
+  m_EditorClassIdentifier: Assembly-CSharp::SailorsRest.UiSkin
+  panelPaper: {fileID: 21300000, guid: 096ed8a05859adaf45ddcc021beaba4d, type: 3}
+  titlePlateLight: {fileID: 21300000, guid: 0c1f44a26de7caf1304faec03178d78f, type: 3}
+  titlePlateDark: {fileID: 21300000, guid: 42e6877e5b50f2330677941c68401a6b, type: 3}
+  slotNormal: {fileID: 21300000, guid: 26ebe208774b97a91583115a4c4574f5, type: 3}
+  slotLocked: {fileID: 21300000, guid: 32e0953d2ee7f1126f4f889f0d870250, type: 3}
+  gaugeFrame: {fileID: 21300000, guid: 0870ea5559579bfa44dfddb71ce8a898, type: 3}
+  powerFill: {fileID: 21300000, guid: 79783db417afb7654a18ceea541eaac7, type: 3}
+  powerFillMax: {fileID: 21300000, guid: 10146e2571dcf4742c5a853d356e0112, type: 3}
+  waterFill: {fileID: 21300000, guid: 2ed87d6632f008e96b4770c8097eea79, type: 3}
+  hookMarker: {fileID: 21300000, guid: 1143f601730c7c502b2afd61369d88ee, type: 3}
+  tensionTrack: {fileID: 21300000, guid: 58cd8ed008faf77f6ac37dce3373fbe3, type: 3}
+  tensionSafe: {fileID: 21300000, guid: 730b184e2b2c6163369c24ec679b54c5, type: 3}
+  tensionDanger: {fileID: 21300000, guid: 77befc4b15f675fc4bd210535265695e, type: 3}
+  tensionMarker: {fileID: 21300000, guid: 234e6cad3e7a19a25fbd600f020b2640, type: 3}
+  sunLeft: {fileID: 21300000, guid: 60049eb83e32daf92395ab567aa1ce5b, type: 3}
+  sunSpent: {fileID: 21300000, guid: 39e9379a644e42170285bbc85f42ca87, type: 3}
+  coin: {fileID: 21300000, guid: 175b38fc4a6d4d5353ca2c5e0dfe59f1, type: 3}
+  pipFilled: {fileID: 21300000, guid: 2fa1089432277dbb6c0ffbf60a4775a7, type: 3}
+  pipEmpty: {fileID: 21300000, guid: 01daa1a163a327f03a9451c12734348e, type: 3}
+  mouseLeft: {fileID: 21300000, guid: 011e0f1a62e695693b50e4482677a207, type: 3}
+  mouseRight: {fileID: 21300000, guid: 596fa92944c7d0881d00b5c77ec93c16, type: 3}
+  mouseIdle: {fileID: 21300000, guid: 63285bf43b0f1dbd26b96892777e111f, type: 3}
+  faceButton: {fileID: 21300000, guid: 01eed4695fd9b1e63e5dc7cb236abe84, type: 3}
+  faceButtonDark: {fileID: 21300000, guid: 56063c670bc249e86d8ad03730aca97a, type: 3}
+  keycap: {fileID: 21300000, guid: 31c56a226c720f8f0aa98940571efd0f, type: 3}
+  buttonWide: {fileID: 21300000, guid: 45a4ac021c23da4d7dec609c204b1915, type: 3}
+  buttonWideHover: {fileID: 21300000, guid: 133c5faf7504e5fe293293b33895f29c, type: 3}
+  buttonWidePressed: {fileID: 21300000, guid: 2206937d7c30e6341a685fe54760266a, type: 3}
+  buttonWideDisabled: {fileID: 21300000, guid: 4e9f87201328ff2f74f1857e2945f433, type: 3}
